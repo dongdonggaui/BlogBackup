@@ -65,8 +65,8 @@ tags:
     func push() {
         let vc = SecondViewController()
         navigationController?.tr_pushViewController(vc, method: TRPushTransitionMethod.Fade, completion: {
-                print("Push finish")
-            })
+            print("Push finish")
+        })
     }
 ~~~
 
@@ -77,8 +77,8 @@ tags:
         let vc = ModalViewController()
         vc.modalDelegate = self // Don't forget to set modalDelegate
         tr_presentViewController(vc, method: TRPresentTransitionMethod.Fade, completion: {
-                print("Present finished.")
-            })
+            print("Present finished.")
+        })
     }
 ~~~
 
